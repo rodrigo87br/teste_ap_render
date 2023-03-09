@@ -118,8 +118,7 @@ class Rossmann( object ):
         return df5[cols_selected]
 
     def get_prediction(self, model, original_data, test_data):
-        print(original_data.columns)
-        print(test_data.columns)
+        
         # prediction
         pred = model.predict(test_data)
         # join pred into the original data
